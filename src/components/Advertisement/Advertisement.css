@@ -1,0 +1,63 @@
+.ad-container {
+    margin-bottom: 75px;
+    min-height: 200px;
+    width: 100%;
+
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "l r";
+}
+
+.ad-left {
+    grid-area: l;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas: "header" "text" "photo";
+}
+
+.ad-header {
+    grid-area: header;
+}
+
+.ad-text {
+    grid-area: text;
+}
+
+.ad-photo {
+    grid-area: photo;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.ad-right {
+    grid-area: r;
+
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas: "phone" "city" "delete";
+}
+
+.ad-phone {
+    grid-area: phone;
+}
+
+.ad-city {
+    grid-area: city;
+}
+
+.ad-delete {
+    grid-area: delete;
+    align-self: end;
+}

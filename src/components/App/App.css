@@ -1,3 +1,137 @@
-#app-container {
-    text-align: center;
+.form {
+    margin-bottom: 50px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas: "form-header form-header"
+                         "header-label header-label"
+                         "header-input header-info-label"
+                         "text-label text-label"
+                         "text-input text-info-label"
+                         "phone-label phone-label"
+                         "phone-input phone-info-label"
+                         "city-label city-label"
+                         "city-input city-info-label"
+                         "attach-input attach-preview"
+                         "submit submit";
+}
+
+.form-header {
+    grid-area: form-header;
+}
+
+.form-header, .ad-list-header {
+    color: #1b2834;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ad-list-header {
+    margin-bottom: 25px;
+}
+
+.advert-header-label {
+    grid-area: header-label;
+}
+
+#advert-header {
+    grid-area: header-input;
+}
+
+.advert-header-info {
+    grid-area: header-info-label;
+    align-self: center;
+}
+
+.advert-body-label {
+    grid-area: text-label;
+}
+
+#advert-body {
+    grid-area: text-input;
+}
+
+.advert-body-info {
+    grid-area: text-info-label;
+}
+
+.advert-phone-label {
+    grid-area: phone-label;
+}
+
+#advert-phone {
+    grid-area: phone-input;
+}
+
+.advert-phone-info {
+    grid-area: phone-info-label;
+    align-self: center;
+}
+
+.advert-city-label {
+    grid-area: city-label;
+}
+
+.advert-city {
+    grid-area: city-input;
+}
+
+.advert-city-info {
+    grid-area: city-info-label;
+    align-self: center;
+}
+
+.attach-button {
+    grid-area: attach-input;
+    cursor: pointer;
+    width: 60%;
+}
+
+.attach-preview {
+    grid-area: attach-preview;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "photo name" "photo delete" "photo e";
+}
+
+.attach-preview-img {
+    grid-area: photo;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.attach-filename {
+    grid-area: name;
+
+    color: #2d74da;
+    font-size: 0.9em;
+}
+
+.attach-delete {
+    grid-area: delete;
+}
+
+.attach-delete-btn {
+    border-bottom: 1px dashed #fa5e5b;
+    color: #fa5e5b;
+    cursor: pointer;
+    float: left;
+    font-size: 0.9em;  
+}
+
+input#attach-input {
+    display: none;
+}
+
+.submit {
+    grid-area: submit;
+    width: 30%;
 }

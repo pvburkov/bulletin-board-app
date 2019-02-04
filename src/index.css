@@ -1,0 +1,11 @@
+* {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin-left: 23%;
+    margin-top: 45px;
+    width: 54%;
+}

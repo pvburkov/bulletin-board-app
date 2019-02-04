@@ -1,5 +1,24 @@
 .btn {
     background-color: white;
-    border: 1px solid green;
-    border-radius: 10%;
+    border: 1px solid #2d74da;
+    border-radius: 3px;
+    color: #2d74da;
+    font-size: 0.9em;
+    min-width: 140px;
+    padding: 10px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    box-shadow: 0 1px 0 0 rgba(27, 40, 52, 0.16);
+    background-image: linear-gradient(to bottom, #2d74da, #2367c8);
+    color: white;
+}
+
+.ad-delete {
+    border: 1px solid #fa5e5b;
+    color: #fa5e5b;
 }

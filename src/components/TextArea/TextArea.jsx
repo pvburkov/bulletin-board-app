@@ -1,31 +1,30 @@
-import './TextInput.css';
+import './TextArea.css';
 
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const TextInput = ({
+const TextArea = ({
     className,
     handleChange,
     maxLength,
-    placeholder,
+    rows,
 }) => {
     return (
-        <input
-            className={['text-input', className].join(' ')}
+        <textarea
+            className={['text-area', className].join(' ')}
             maxLength={maxLength}
-            onBlur={handleChange}
             onChange={handleChange}
-            placeholder={placeholder}
-            type="text"
+            onBlur={handleChange}
+            rows={rows}
         />
     );
 };
 
-TextInput.propTypes = {
+TextArea.propTypes = {
     className: PropTypes.string,
     handleChange: PropTypes.func.isRequired,
     maxLength: PropTypes.number.isRequired,
-    placeholder: PropTypes.string,
+    rows: PropTypes.number.isRequired,
 };
 
-export default TextInput;
+export default TextArea;

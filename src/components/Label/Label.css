@@ -1,0 +1,93 @@
+.label {
+    font-size: 16px;
+    text-align: left; 
+}
+
+.label.head {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b2834;
+}
+
+.with-icon {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 25px 1fr;
+    grid-auto-rows: mincontent;
+    grid-template-areas: "i t0" "e t1";
+}
+
+.text0, .text1 {
+    align-self: center;
+}
+
+.text0 {
+    grid-area: t0;
+}
+
+.text1 {
+    grid-area: t1;
+}
+
+.icon {
+    grid-area: i;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.label.confirm {
+    color: #16c98d;
+}
+
+.icon.confirm {
+    background-image: url('./i/icon_confirm.svg');
+}
+
+.label.info {
+    color: #68717c;
+}
+
+.icon.info {
+    background-image: url('./i/icon_info.svg');
+}
+
+.label.warning {
+    color: #fa5e5b;
+}
+
+.icon.warning {
+    background-image: url('./i/icon_warning.svg');
+}
+
+.icon.phone {
+    background-image: url('./i/icon_phone.svg');
+}
+
+.icon.city {
+    background-image: url('./i/icon_map.svg');
+}
+
+.label.attach-input {
+    background-color: white;
+    border: 1px solid #2d74da;
+    border-radius: 3px;
+    color: #2d74da;
+    min-width: 140px;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label.attach-input > .icon {
+    background-image: url('./i/icon_attach.svg');
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-right: 8px;
+    width: 20px;
+}

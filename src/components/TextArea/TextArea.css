@@ -1,4 +1,4 @@
-.text-input {
+.text-area {
     background-color: rgba(27, 40, 52, 0.01);
     border: 1px solid #d4d8db;
     border-radius: 3px;
@@ -7,14 +7,7 @@
     color: #68717c;
     font-size: 18px;
     padding: 8px 10px;
+    resize: none;
     text-align: left;
     width: 100%;
-}
-
-.text-input.warning {
-    border: 1px solid #fa5e5b;
-}
-
-.phone-empty-input {
-    opacity: 0.5;
 }
