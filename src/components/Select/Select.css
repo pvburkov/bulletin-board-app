@@ -10,6 +10,9 @@
     -moz-appearance: none;
     appearance: none;
     background-color: rgba(27, 40, 52, 0.01);
+    background-image: url('./i/icon_arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: 97% center;
     border: 1px solid #d4d8db;
     border-radius: 3px;
     box-shadow: inset 0 1px 3px 0 rgba(27, 40, 52, 0.08);
@@ -23,15 +26,6 @@
 
 .empty-option {
     display: none;
-}
-
-.arrow-down {
-    background-image: url('./i/icon_arrow_down.svg');
-    bottom: 8px;
-    height: 24px;
-    right: 8px;
-    position: absolute;
-    width: 24px;
 }
 
 .cross {

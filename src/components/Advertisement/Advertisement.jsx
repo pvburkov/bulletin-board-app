@@ -23,36 +23,39 @@ const Advertisement = ({
     } = advertisement;
 
     return (
-        <div className="ad-container" id={id}>
-            <div className="ad-left">
+        <div className="bulletin-container" id={id}>
+            <div className="bulletin-left">
                 <Label
                     attachedElemId={id}
-                    className="ad-header"
+                    className="bulletin-header"
                     status={'head'}
                     text={header}
                 />
                 {text && (
                     <Label
                         attachedElemId={id}
-                        className="ad-text"
+                        className="bulletin-text"
                         status={'info'}
                         text={text}
                     />
                 )}
                 {photo && (
                     <div
-                        className="ad-photo"
+                        className="bulletin-photo"
                         style={{
                             backgroundImage: `url(${LZString.decompress(photo)})`,
                         }}
                     ></div>
                 )}
+                {!photo && (
+                    <div className="bulletin-nophoto"></div>
+                )}
             </div>
-            <div className="ad-right">
+            <div className="bulletin-right">
                 {phone && (
                     <Label
                         attachedElemId={id}
-                        className="ad-phone"
+                        className="bulletin-phone"
                         status={'phone'}
                         text={phone}
                         withIcon={true}
@@ -61,14 +64,14 @@ const Advertisement = ({
                 {city && (
                     <Label
                         attachedElemId={id}
-                        className="ad-city"
+                        className="bulletin-city"
                         status={'city'}
                         text={city}
                         withIcon={true}
                     />
                 )}
                 <Button
-                    className="ad-delete"
+                    className="bulletin-delete"
                     onClick={() => deleteAdvertisement(id)}
                     type="button"
                 >

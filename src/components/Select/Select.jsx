@@ -35,7 +35,6 @@ const Select = ({
                 </option>
             ))}
         </select>
-        <div className="arrow-down"></div>
         {value && (
             <div
                 className="cross"
